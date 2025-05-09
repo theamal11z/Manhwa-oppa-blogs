@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://manga-oppa-blog.com',
+  site: 'https://blogsmanhwa-oppa.vercel.app/',
   integrations: [
     mdx(), 
     sitemap(),
