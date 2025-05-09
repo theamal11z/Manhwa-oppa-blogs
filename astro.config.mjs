@@ -6,14 +6,14 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://blogsmanhwa-oppa.vercel.app/', // Make sure this is exactly correct
+  site: 'https://blogsmanhwa-oppa.vercel.app/',
   integrations: [
-    mdx(), 
-    sitemap({
-      // Optional: Specify custom sitemap URL (if you want it named 'sitemap.xml')
-      sitemap: '/sitemap.xml',
+    mdx(),
+    sitemap({ // Correct usage of the sitemap integration
+      changefreq: 'weekly', // You can specify your preferred change frequency
+      priority: 0.5, // Default priority
     }),
     tailwind(),
   ],
-  output: 'static', // Ensure the output is 'static' for a full static site (important for sitemap generation)
+  output: 'static',
 });
