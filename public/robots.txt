@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://blog.manhva-oppa.com/sitemap-index.xml
+Sitemap: https://blogsmanhwa-oppa.vercel.app/sitemap-index.xml
 
 # Prevent crawling of admin pages if they exist
 User-agent: *
