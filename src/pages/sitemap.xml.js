@@ -2,7 +2,7 @@ import { getAllBlogPosts } from '../lib/blogDataService.js';
 
 export async function get() {
   // Base URL of your site
-  const site = 'https://blog.manhva-oppa.com';
+  const site = 'https://blogsmanhwa-oppa.vercel.app';
   
   // Get all blog posts
   const { posts } = await getAllBlogPosts({ limit: 1000 });
@@ -20,14 +20,15 @@ export async function get() {
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>${site}/blog/archive</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+
   <url>
     <loc>${site}/about</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>${site}/discover</loc>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   ${posts.map(post => {
