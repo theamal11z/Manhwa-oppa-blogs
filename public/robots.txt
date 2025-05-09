@@ -2,7 +2,10 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemap location for individual sitemap
+Sitemap: https://blogsmanhwa-oppa.vercel.app/sitemap.xml
+
+# Sitemap location for sitemap index
 Sitemap: https://blogsmanhwa-oppa.vercel.app/sitemap-index.xml
 
 # Prevent crawling of admin pages if they exist
